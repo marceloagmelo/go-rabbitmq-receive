@@ -78,7 +78,7 @@ func processa(conn *amqp.Connection) {
 		}
 	}()
 
-	log.Printf(" [*] Esperando mensagens. Para sair pressione CTRL+C")
+	log.Printf(" [*] Esperando mensagens da fila: %s", fila)
 	<-forever
 
 }

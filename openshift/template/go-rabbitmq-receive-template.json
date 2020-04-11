@@ -236,7 +236,7 @@
             "name": "MYSQL_SECRET",
             "displayName": "Secret do banco de dados",
             "description": "Secret do banco de dados",
-            "value": "secret-db-mysqldb",
+            "value": "mysqldb",
             "required": true
         },
         {
@@ -250,7 +250,7 @@
             "name": "MYSQL_DATABASE",
             "displayName": "Nome do banco de dados",
             "description": "Nome do banco de dados",
-            "value": "mysqlsampledb",
+            "value": "mysqldbsample",
             "required": true
         },
         {
@@ -276,7 +276,7 @@
         {
             "displayName": "VHost",
             "description": "VHost",
-            "name": "RABBITMQ_DEFAULT_VHOST",
+            "name": "RABBITMQ_VHOST",
             "value": "/"
         }
     ],
