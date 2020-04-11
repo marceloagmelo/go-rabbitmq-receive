@@ -1,0 +1,6 @@
+# Arquivo binario
+go-rabbitmq-receive
+
+# Vendor
+vendor/
+.vendor-new/
