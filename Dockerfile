@@ -30,16 +30,6 @@ RUN apk add --no-cache ca-certificates && \
     adduser -u $UID -S -h "$(pwd)" -G $USER $USER && \
     chown -fR $USER:0 $APP_HOME
 
-#######################################################################
-##### We have to expose image metada as label and ENV
-#######################################################################
-LABEL br.com.santander.imageowner="Corporate Techonology" \
-      br.com.santander.description="RabbitMQ receber de mensagens runtime for node microservices" \
-      br.com.santander.components="Golang Server"
-
-ENV br.com.santander.imageowner="Corporate Techonology"
-ENV br.com.santander.description="RabbitMQ receber de mensagens runtime for node microservices"
-ENV br.com.santander.components="Golang Server"
 
 ENV PATH $APP_HOME:$PATH
 
